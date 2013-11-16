@@ -13,9 +13,6 @@
 $log_location = '/var/log/nginx';
 $log_name = 'access.log';
 
-$log_location = dirname(__FILE__)."/Log_Examples";
-$log_name = 'access.log';
-
 // We need to define the log record structure - you can grab this from your NGinx config file
 // Note: If you've include time_local, follow it with an entry called timezone
 $log_struct = array('remote_addr','-','remote_user', 'time_local','timezone','request','status','body_bytes_sent','http_referer','http_user_agent','http_x_forwarded_for','http_host','upstream_cache_status');
